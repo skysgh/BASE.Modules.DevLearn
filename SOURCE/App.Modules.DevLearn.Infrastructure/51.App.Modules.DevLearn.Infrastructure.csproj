@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>App.Modules.DevLearn.Infrastructure</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Infrastructure</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Infrastructure\61.App.Base.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+	  <ProjectReference Include="..\App.Modules.DevLearn.Shared\61.App.Modules.DevLearn.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
