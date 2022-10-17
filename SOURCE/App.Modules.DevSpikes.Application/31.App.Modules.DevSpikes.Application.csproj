@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AssemblyName>App.Modules.DevSpikes.Application</AssemblyName>
+    <RootNamespace>App.Modules.DevSpikes.Application</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\App.Modules.DevSpikes.Domain\41.App.Modules.DevSpikes.Domain.csproj" />
+    <ProjectReference Include="..\App.Modules.DevSpikes.Infrastructure\51.App.Modules.DevSpikes.Infrastructure.csproj" />
+    <ProjectReference Include="..\App.Modules.DevSpikes.Shared\61.App.Modules.DevSpikes.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="ObjectMapping\Initialisation\ObjectMaps\" />
+  </ItemGroup>
+
+</Project>

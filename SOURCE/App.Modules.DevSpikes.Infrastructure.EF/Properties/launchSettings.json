@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "52.App.Modules.DevSpikes.Infrastructure.Storage.Db.EF": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:64782;http://localhost:64783"
+    }
+  }
+}

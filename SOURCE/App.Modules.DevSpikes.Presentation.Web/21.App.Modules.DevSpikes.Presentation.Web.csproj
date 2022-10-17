@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AssemblyName>App.Modules.DevSpikes.Presentation.Web</AssemblyName>
+    <RootNamespace>App.Modules.DevSpikes.Presentation.Web</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+    <BaseIntermediateOutputPath>obj\</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\App.Modules.DevSpikes.Application\31.App.Modules.DevSpikes.Application.csproj" />
+    <ProjectReference Include="..\App.Modules.DevSpikes.Infrastructure.EF\52.App.Modules.DevSpikes.Infrastructure.Data.Storage.Db.EF.csproj" />
+    <ProjectReference Include="..\App.Modules.DevSpikes.Shared\61.App.Modules.DevSpikes.Shared.csproj" />
+  </ItemGroup>
+
+    <ItemGroup>
+	    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Presentation.Web\31.App.Base.Presentation.Web.csproj" />
+    </ItemGroup>
+
+	<ItemGroup>
+    <Folder Include="Api\OData\" />
+    <Folder Include="Api\OData\Controllers\Demos\Implementations\" />
+    <Folder Include="Api\Rest\Controllers\Implementations\" />
+    <Folder Include="Models\Messages\DTOs\" />
+  </ItemGroup>
+
+</Project>
