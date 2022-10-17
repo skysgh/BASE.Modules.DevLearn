@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "61.App.Modules.DevLearn.Shared": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:53511;http://localhost:53512"
+    }
+  }
+}
