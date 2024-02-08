@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>App.Modules.DevLearn.Shared</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Shared</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Messages\**" />
+    <EmbeddedResource Remove="Models\Messages\**" />
+    <None Remove="Models\Messages\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Entities\_placeholder.txt" />
+    <None Remove="Models\Enums\_placeholder.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared.Interfaces\App.Base.92.Shared.Interfaces.csproj" />
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared\App.Base.91.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Entities\" />
+    <Folder Include="Models\Enums\" />
+  </ItemGroup>
+
+</Project>

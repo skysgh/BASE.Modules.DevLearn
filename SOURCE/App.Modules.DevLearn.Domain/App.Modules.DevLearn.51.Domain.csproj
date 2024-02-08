@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>App.Modules.DevLearn.Domain</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Domain</RootNamespace>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared.Interfaces\App.Base.92.Shared.Interfaces.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Shared\App.Modules.DevLearn.91.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

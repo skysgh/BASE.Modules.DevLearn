@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "41.App.Modules.DevLearn.Dom
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "51.App.Modules.DevLearn.Infrastructure", "App.Modules.DevLearn.Infrastructure\51.App.Modules.DevLearn.Infrastructure.csproj", "{7C6CC756-3D63-4A08-BC98-FE6920B3D108}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "52.App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF", "App.Modules.DevLearn.Infrastructure.Storage.Db.EF\52.App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF.csproj", "{E24C7DBD-1BA8-4C1A-8B5E-2EFEC4411E00}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "52.App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF", "App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF\52.App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF.csproj", "{E24C7DBD-1BA8-4C1A-8B5E-2EFEC4411E00}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "31.App.Modules.DevLearn.Application", "App.Modules.DevLearn.Application\31.App.Modules.DevLearn.Application.csproj", "{4A6DBC46-B379-4636-B04B-DB951951C1E7}"
 EndProject

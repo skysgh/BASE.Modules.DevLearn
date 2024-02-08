@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Infrastructure.Data.Storage.Db.EF</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interceptions\" />
+    <Folder Include="Services\Implementations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Infrastructure\App.Base.61.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared.Interfaces\App.Base.92.Shared.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+	  <ProjectReference Include="..\App.Modules.DevLearn.Infrastructure\App.Modules.DevLearn.61.Infrastructure.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Shared\App.Modules.DevLearn.91.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

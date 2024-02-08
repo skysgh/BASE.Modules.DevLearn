@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AssemblyName>App.Modules.DevLearn.Presentation.Web</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Presentation.Web</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <None Remove="NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Application\App.Base.41.Application.csproj" />
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Presentation.Web\App.Base.31.Presentation.Web.csproj" />
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared.Interfaces\App.Base.92.Shared.Interfaces.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+	  <ProjectReference Include="..\App.Modules.DevLearn.Infrastructure\App.Modules.DevLearn.61.Infrastructure.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Application\App.Modules.DevLearn.41.Application.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Shared\App.Modules.DevLearn.91.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APIs\Soap\" />
+  </ItemGroup>
+
+</Project>

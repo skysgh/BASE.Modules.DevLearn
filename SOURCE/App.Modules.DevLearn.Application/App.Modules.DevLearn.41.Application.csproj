@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <AssemblyName>App.Modules.DevLearn.Application</AssemblyName>
+    <RootNamespace>App.Modules.DevLearn.Application</RootNamespace>
+        <BaseOutputPath>..\..\..\..\SOURCE\App.Service.Host\MODULES\</BaseOutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <TreatWarningsAsErrors>True</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ObjectMapping\**" />
+    <EmbeddedResource Remove="ObjectMapping\**" />
+    <None Remove="ObjectMapping\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="APIs\Messages\_placeholder.txt" />
+    <None Remove="APIs\ObjectMapping\_placeholder.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BASE\SOURCE\App.Base.Shared.Interfaces\App.Base.92.Shared.Interfaces.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Domain\App.Modules.DevLearn.51.Domain.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Infrastructure\App.Modules.DevLearn.61.Infrastructure.csproj" />
+    <ProjectReference Include="..\App.Modules.DevLearn.Shared\App.Modules.DevLearn.91.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APIs\Messages\" />
+    <Folder Include="APIs\ObjectMapping\" />
+  </ItemGroup>
+
+</Project>
